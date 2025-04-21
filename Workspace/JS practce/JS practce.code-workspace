@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../B2-25-SW-2-FEB-Deliverable"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JS practce"
+	}
+}
