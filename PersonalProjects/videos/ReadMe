@@ -1,1 +1,6 @@
 http://127.0.0.1:5500/PersonalProjects/index.html
+
+This is a weather desktop concept i have created for pratcice
+Functions
+Search and select any city in the world, and it will tell you the weather, temperature with a choice of celsius or fahrenheit, humidity, chance of rain, uv index, hour by hour forecast, and a 5 day forecast. 
+Corresponding background loop video to resemble the type of weather in your selected city

@@ -7,42 +7,41 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <video autoplay muted loop id="backgroundVideo">
-    <source src="videos/clear.mp4" type="video/mp4" />
+  <video autoplay muted loop id="background-video" class="video-background">
+    <source src="videos/day.mp4" type="video/mp4">
   </video>
 
-  <div class="app-container">
-    <div id="loadingSpinner" class="spinner hidden"></div>
-    <div class="weather-card">
-      <input type="text" id="searchBox" placeholder="Enter a city..." />
-      <button id="toggleTheme">Toggle Light/Dark Mode</button>
+  <div class="weather-container">
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search for a city...">
       <button id="unitToggle">°F</button>
+      <button id="themeToggle">Toggle Theme</button>
+    </div>
 
-      <div class="weather-main">
-        <div class="weather-icon">
-          <img id="weatherIcon" src="" alt="Weather icon" />
-        </div>
-        <div class="weather-info">
-          <h2 id="cityName">City Name</h2>
-          <p id="description">Description</p>
-          <h1 id="temperature">--°</h1>
-        </div>
+    <div class="top-section">
+      <div class="current-weather">
+        <h2 id="cityName">City</h2>
+        <p id="weatherDescription"></p>
+        <h3 id="temperature"></h3>
+        <img id="weatherIcon" src="" alt="Weather Icon" />
       </div>
 
-      <div class="weather-details">
-        <p id="feelsLike">Feels like: --°</p>
-        <p id="humidity">Humidity: --%</p>
-        <p id="wind">Wind: --</p>
+      <div class="forecast-container" id="forecastContainer">
+        <!-- 5-Day forecast here -->
+      </div>
+    </div>
+
+    <div class="bottom-section">
+      <div class="hourly-forecast" id="hourlyContainer">
+        <!-- Hourly forecast here -->
       </div>
 
-      <div class="forecast-section">
-        <h3>5-Day Forecast</h3>
-        <div class="forecast-grid" id="forecastContainer"></div>
-      </div>
-
-      <div class="forecast-section">
-        <h3>Hourly Forecast</h3>
-        <div class="forecast-grid" id="hourlyContainer"></div>
+      <div class="details-box">
+        <p id="feelsLike"></p>
+        <p id="humidity"></p>
+        <p id="wind"></p>
+        <p id="uvIndex"></p>
+        <p id="chanceOfRain"></p>
       </div>
     </div>
   </div>
