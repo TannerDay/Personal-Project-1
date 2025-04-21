@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="videos/clear.mp4" type="video/mp4" />
+  </video>
+
+  <div class="app-container">
+    <div id="loadingSpinner" class="spinner hidden"></div>
+    <div class="weather-card">
+      <input type="text" id="searchBox" placeholder="Enter a city..." />
+      <button id="toggleTheme">Toggle Light/Dark Mode</button>
+      <button id="unitToggle">°F</button>
+
+      <div class="weather-main">
+        <div class="weather-icon">
+          <img id="weatherIcon" src="" alt="Weather icon" />
+        </div>
+        <div class="weather-info">
+          <h2 id="cityName">City Name</h2>
+          <p id="description">Description</p>
+          <h1 id="temperature">--°</h1>
+        </div>
+      </div>
+
+      <div class="weather-details">
+        <p id="feelsLike">Feels like: --°</p>
+        <p id="humidity">Humidity: --%</p>
+        <p id="wind">Wind: --</p>
+      </div>
+
+      <div class="forecast-section">
+        <h3>5-Day Forecast</h3>
+        <div class="forecast-grid" id="forecastContainer"></div>
+      </div>
+
+      <div class="forecast-section">
+        <h3>Hourly Forecast</h3>
+        <div class="forecast-grid" id="hourlyContainer"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
