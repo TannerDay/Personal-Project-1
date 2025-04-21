@@ -1,4 +1,4 @@
-const apiKey = "177bab8bb13cf41d86764a1ca008fb92";
+const apiKey = "";
 const searchInput = document.getElementById("searchInput");
 const unitToggle = document.getElementById("unitToggle");
 const themeToggle = document.getElementById("themeToggle");
